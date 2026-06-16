@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Service &amp; Contact | FlameCraft</title>
+    <meta name="description" content="Request a professional chimney inspection or safety sweep. View my Denver business hours, phone number, and location. I respond within 24 business hours.">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+
+    <!-- Skip to Main Content Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Sticky Navigation Header -->
+    <header class="navbar navbar-expand-lg premium-nav sticky-top py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html" id="brand-logo-link">
+                <img src="assets/images/logo.svg" alt="FlameCraft Logo">
+            </a>
+            
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#premiumNavbar" aria-controls="premiumNavbar" aria-expanded="false" aria-label="Toggle navigation" id="navbar-hamburger">
+                <span class="bi bi-list fs-1 text-primary"></span>
+            </button>
+            
+            <nav class="collapse navbar-collapse" id="premiumNavbar" aria-label="Main navigation">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html" id="nav-home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="home2.html" id="nav-home2">Home 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html" id="nav-services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html" id="nav-about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html" id="nav-gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html" id="nav-pricing">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.html" id="nav-contact">Contact</a></li>
+                </ul>
+                
+                <!-- Control Toggles -->
+                <div class="d-flex gap-2 mt-3 mt-lg-0 justify-content-center ms-lg-auto">
+                    <button class="control-btn" id="theme-toggle" aria-label="Switch to Dark Mode">
+                        <i class="bi bi-moon-stars"></i>
+                    </button>
+                    <button class="control-btn" id="rtl-toggle" aria-label="Switch to Right to Left Layout">RTL</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main id="main-content">
+        
+        <!-- Header Banner Section -->
+        <section class="py-5 bg-card border-bottom" aria-label="Contact Page Intro">
+            <div class="container py-4 text-center">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <span class="section-subtitle">SECURE A DATE</span>
+                        <h1 class="display-title mb-3">Request Booking &amp; Consulting</h1>
+                        <p class="fs-5 mb-0 text-secondary">Complete the service inquiry below. I will personally review your chimney details and confirm scheduling options within 24 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Form & Info Grid -->
+        <section class="py-5" aria-label="Service request details">
+            <div class="container py-4">
+                <div class="row g-5">
+                    
+                    <!-- Left Column: Business Details & Map -->
+                    <div class="col-lg-5 scroll-reveal text-center">
+                        <span class="section-subtitle">CONTACT INFO</span>
+                        <h2 class="h3 fw-bold mb-4">Location &amp; Service Hours</h2>
+                        
+                        <div class="mb-4">
+                            <h3 class="h6 fw-bold text-uppercase mb-2">My Service Region</h3>
+                            <p class="text-secondary mb-0">1200 Copper Ridge Dr, Denver, CO 80202</p>
+                            <p class="text-secondary small">Serving Denver, Cherry Hills, and surrounding mountain areas.</p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h3 class="h6 fw-bold text-uppercase mb-2">Direct Contact</h3>
+                            <p class="text-secondary mb-1"><strong>Phone:</strong> +1 (303) 555-0185</p>
+                            <p class="text-secondary mb-0"><strong>Email:</strong> craft@luxechimneycare.com</p>
+                        </div>
+
+                        <div class="mb-5">
+                            <h3 class="h6 fw-bold text-uppercase mb-2">Service Operating Hours</h3>
+                            <ul class="list-unstyled text-secondary small">
+                                <li class="mb-1">Monday - Friday: 8:00 AM - 6:00 PM</li>
+                                <li class="mb-1">Saturday: 9:00 AM - 4:00 PM</li>
+                                <li class="mb-3">Sunday: Closed</li>
+                            </ul>
+                            <!-- Real-time business status container -->
+                            <div id="business-status" class="mb-4"></div>
+                            
+                            <!-- Social Media Links -->
+                            <h3 class="h6 fw-bold text-uppercase mb-2">Connect With Me</h3>
+                            <div class="d-flex gap-2 justify-content-center">
+                                <a href="https://www.facebook.com/luxechimney" class="control-btn" aria-label="Facebook" target="_blank" rel="noopener"><i class="bi bi-facebook"></i></a>
+                                <a href="https://www.instagram.com/luxechimney" class="control-btn" aria-label="Instagram" target="_blank" rel="noopener"><i class="bi bi-instagram"></i></a>
+                                <a href="https://twitter.com/luxechimney" class="control-btn" aria-label="Twitter" target="_blank" rel="noopener"><i class="bi bi-twitter-x"></i></a>
+                                <a href="https://linkedin.com/company/luxechimney" class="control-btn" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Real Google Map -->
+                        <div class="border p-2 bg-card">
+                            <div class="ratio ratio-16x9">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3067.873238719227!2d-104.990251!3d39.7392358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c78d067ed7f55%3A0xe9682570077cd1ce!2s1200%20Copper%20Ridge%20Dr%2C%20Denver%2C%20CO%2080202!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Luxury Hearth Workshop Map"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Column: Booking Request Form -->
+                    <div class="col-lg-7 scroll-reveal">
+                        <div class="border p-4 p-md-5 bg-card">
+                            <h2 class="h4 fw-bold mb-4">Service Request Form</h2>
+                            
+                            <form id="contactForm" class="needs-validation-custom" novalidate aria-label="Hearth service request">
+                                <div class="row g-3">
+                                    
+                                    <!-- Name -->
+                                    <div class="col-12">
+                                        <label for="client-name" class="form-label">Full Name</label>
+                                        <input type="text" class="form-control premium-form-control" id="client-name" required placeholder="Alexander Mercer">
+                                        <div class="invalid-feedback-custom text-danger small mt-1" style="display: none;">Please provide your name.</div>
+                                    </div>
+                                    
+                                    <!-- Email -->
+                                    <div class="col-12">
+                                        <label for="client-email" class="form-label">Email Address</label>
+                                        <input type="email" class="form-control premium-form-control" id="client-email" required placeholder="alex@domain.com">
+                                        <div class="invalid-feedback-custom text-danger small mt-1" style="display: none;">Please provide a valid email.</div>
+                                    </div>
+                                    
+                                    <!-- Phone -->
+                                    <div class="col-12">
+                                        <label for="client-phone" class="form-label">Phone Number</label>
+                                        <input type="tel" class="form-control premium-form-control" id="client-phone" required placeholder="(303) 555-0185">
+                                        <div class="invalid-feedback-custom text-danger small mt-1" style="display: none;">Please provide a numeric phone.</div>
+                                    </div>
+                                    
+                                    <!-- Service Package -->
+                                    <div class="col-12">
+                                        <label for="client-package" class="form-label">Service / Package</label>
+                                        <select class="form-select premium-form-control" id="client-package" required>
+                                            <option value="" disabled selected>Select an Option...</option>
+                                            <optgroup label="Seasonal Packages">
+                                                <option value="spring">Spring Refresh ($189)</option>
+                                                <option value="prewinter">Pre-Winter Prep ($349)</option>
+                                                <option value="winter">Winter Ready ($499)</option>
+                                            </optgroup>
+                                            <optgroup label="Standard Maintenance">
+                                                <option value="inspection">Annual Safety Inspection ($189)</option>
+                                                <option value="care">Complete Chimney Care ($349)</option>
+                                                <option value="restoration">Fireplace Restoration ($499)</option>
+                                            </optgroup>
+                                            <optgroup label="Specialized Repairs">
+                                                <option value="masonry">Flue Masonry Repair</option>
+                                                <option value="gas-install">Gas Insert Installation</option>
+                                                <option value="smoke-draft">Smoke Draft Correction</option>
+                                            </optgroup>
+                                        </select>
+                                        <div class="invalid-feedback-custom text-danger small mt-1" style="display: none;">Please select a service option.</div>
+                                    </div>
+                                    
+                                    <!-- Preferred Date -->
+                                    <div class="col-12">
+                                        <label for="client-date" class="form-label">Preferred Service Date</label>
+                                        <input type="date" class="form-control premium-form-control" id="client-date" required>
+                                        <div class="invalid-feedback-custom text-danger small mt-1" style="display: none;">Please choose a valid scheduling date.</div>
+                                    </div>
+                                    
+                                    <!-- Message -->
+                                    <div class="col-12">
+                                        <label for="client-message" class="form-label">Fireplace details &amp; Notes</label>
+                                        <textarea class="form-control premium-form-control" id="client-message" rows="4" required placeholder="Please describe fuel type (gas/wood), when the flue was last swept, and any draft issues..."></textarea>
+                                        <div class="invalid-feedback-custom text-danger small mt-1" style="display: none;">Please add fireplace details for review.</div>
+                                    </div>
+                                    
+                                    <!-- Submit Button -->
+                                    <div class="col-12 mt-4">
+                                        <button type="submit" class="btn btn-premium w-100" id="btn-submit-booking">Send Service Request</button>
+                                    </div>
+                                    
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-card border-top" aria-label="Site footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <a class="d-flex align-items-center mb-3" href="index.html" id="footer-logo-link">
+                        <img src="assets/images/logo.svg" alt="FlameCraft Logo" class="footer-logo">
+                    </a>
+                    <p class="small mb-4">Artisan chimney sweeping, flue scans, and safety masonry repair. FlameCraft delivers premium, code-compliant maintenance to protect luxury homes from soot and venting hazards.</p>
+                    <div class="d-flex gap-2 mb-4 footer-socials">
+                        <a href="https://www.facebook.com/luxechimney" class="control-btn" aria-label="Facebook" target="_blank" rel="noopener"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/luxechimney" class="control-btn" aria-label="Instagram" target="_blank" rel="noopener"><i class="bi bi-instagram"></i></a>
+                        <a href="https://twitter.com/luxechimney" class="control-btn" aria-label="Twitter" target="_blank" rel="noopener"><i class="bi bi-twitter-x"></i></a>
+                        <a href="https://linkedin.com/company/luxechimney" class="control-btn" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <h4 class="h6 fw-bold text-uppercase letter-spacing-1 mb-3">Quick Links</h4>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><a href="index.html" class="text-secondary hover-primary">Home</a></li>
+                        <li class="mb-2"><a href="home2.html" class="text-secondary hover-primary">Home 2</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-secondary hover-primary">Services</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-secondary hover-primary">About Us</a></li>
+                        <li class="mb-2"><a href="gallery.html" class="text-secondary hover-primary">Gallery Portfolio</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <h4 class="h6 fw-bold text-uppercase letter-spacing-1 mb-3">Resources</h4>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><a href="pricing.html" class="text-secondary hover-primary">Pricing Tiers</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-secondary hover-primary">Schedule Booking</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-secondary hover-primary">Safety Protocols</a></li>
+                        <li class="mb-2"><a href="404.html" class="text-secondary hover-primary">Terms of Service</a></li>
+                        <li class="mb-2"><a href="404.html" class="text-secondary hover-primary">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="h6 fw-bold text-uppercase letter-spacing-1 mb-3">Stay Updated</h4>
+                    <p class="small text-secondary mb-3">Subscribe to receive seasonal safety guides and priority booking slots.</p>
+                    <form class="needs-validation-custom footer-newsletter-form" id="newsletter-form" novalidate>
+                        <div class="input-group">
+                            <input type="email" class="form-control premium-form-control text-start" placeholder="Your Email Address" aria-label="Your Email Address" required>
+                            <button class="btn btn-premium px-3" type="submit" id="newsletter-subscribe-btn">Subscribe</button>
+                        </div>
+                        <div class="invalid-feedback-custom text-danger small mt-1" style="display: none;">Please enter a valid email address.</div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="row pt-5 mt-4 border-top align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small text-secondary mb-0">&copy; <span id="current-year">2026</span> FlameCraft. All rights reserved. Crafted for safety and warmth.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
+                    <a href="404.html" class="small text-secondary me-3 hover-primary">Privacy Policy</a>
+                    <a href="404.html" class="small text-secondary hover-primary">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top-btn" aria-label="Back to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 Bundle JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom Main JS -->
+    <script src="assets/js/main.js"></script>
+    
+    <!-- Script to check search params and auto-select package dropdown -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const pkg = urlParams.get('package');
+            if (pkg) {
+                const select = document.getElementById('client-package');
+                if (select) {
+                    select.value = pkg;
+                }
+            }
+        });
+    </script>
+</body>
+</html>

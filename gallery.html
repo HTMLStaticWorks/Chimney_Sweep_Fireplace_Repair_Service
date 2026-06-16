@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craftsmanship Showcase &amp; Gallery | FlameCraft</title>
+    <meta name="description" content="View before-and-after transformations of swept flues, rebuilt hearth brickworks, and customized fireplace designs. Proof of my professional safety standards.">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+
+    <!-- Skip to Main Content Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Sticky Navigation Header -->
+    <header class="navbar navbar-expand-lg premium-nav sticky-top py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html" id="brand-logo-link">
+                <img src="assets/images/logo.svg" alt="FlameCraft Logo">
+            </a>
+            
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#premiumNavbar" aria-controls="premiumNavbar" aria-expanded="false" aria-label="Toggle navigation" id="navbar-hamburger">
+                <span class="bi bi-list fs-1 text-primary"></span>
+            </button>
+            
+            <nav class="collapse navbar-collapse" id="premiumNavbar" aria-label="Main navigation">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html" id="nav-home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="home2.html" id="nav-home2">Home 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html" id="nav-services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html" id="nav-about">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="gallery.html" id="nav-gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html" id="nav-pricing">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html" id="nav-contact">Contact</a></li>
+                </ul>
+                
+                <!-- Control Toggles -->
+                <div class="d-flex gap-2 mt-3 mt-lg-0 justify-content-center ms-lg-auto">
+                    <button class="control-btn" id="theme-toggle" aria-label="Switch to Dark Mode">
+                        <i class="bi bi-moon-stars"></i>
+                    </button>
+                    <button class="control-btn" id="rtl-toggle" aria-label="Switch to Right to Left Layout">RTL</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main id="main-content">
+        
+        <!-- Header Banner Section -->
+        <section class="py-5 bg-card border-bottom" aria-label="Gallery Page Intro">
+            <div class="container py-4 text-center">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <span class="section-subtitle">VISUAL WORK LOG</span>
+                        <h1 class="display-title mb-3">Craftsmanship Gallery</h1>
+                        <p class="fs-5 mb-0 text-secondary">Every project represents my safety-first standard. Browse visual evidence of soot removal transformations, fireplace brick rebuilding, and clean installations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Before/After Featured Slider -->
+        <section class="py-5" aria-label="Featured before and after comparison">
+            <div class="container py-4">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-5 scroll-reveal text-center text-lg-start">
+                        <span class="section-subtitle">FEATURED TRANSFORMATION</span>
+                        <h2 class="display-6 fw-bold mb-4">Soot &amp; Creosote Sweep</h2>
+                        <p class="mb-4">Heavy, glazed creosote deposits cannot be swept out with standard tools. Using rotary sweep equipment, I strip away these hazards down to the bare brick structure, restoring proper exhaust flow.</p>
+                        <p class="text-secondary small mb-0">Use the slider handle on the image block to compare the soot-clogged firebox with the completely cleaned and restored brickwork after my sweeping service.</p>
+                    </div>
+                    <div class="col-lg-7 scroll-reveal">
+                        <div class="ba-slider-container">
+                            <div class="ba-image ba-before" style="background-image: url('assets/images/gallery_before_cleaning.png');">
+                                <span class="ba-slider-label before-label">Creosote Hazard</span>
+                            </div>
+                            <div class="ba-image ba-after" style="background-image: url('assets/images/gallery_after_cleaning.png');">
+                                <span class="ba-slider-label after-label">Swept Clean</span>
+                            </div>
+                            <div class="ba-handle" role="slider" aria-label="Before/After comparison slider handle" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                <div class="ba-handle-button">
+                                    <i class="bi bi-arrow-left-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Gallery Filter Grid -->
+        <section class="py-5 bg-card border-top" aria-label="Filterable project portfolio">
+            <div class="container py-4">
+                <div class="text-center mb-5 scroll-reveal">
+                    <span class="section-subtitle">COMPLETED WORK</span>
+                    <h2 class="display-6 fw-bold mb-4">Fireplace Restoration Portfolio</h2>
+                    
+                    <!-- Filter Controls -->
+                    <div class="d-flex flex-wrap justify-content-center gap-2 mt-4" id="gallery-filters" role="group" aria-label="Gallery category filters">
+                        <button class="gallery-filter-btn active" data-filter="all" id="btn-filter-all">All Projects</button>
+                        <button class="gallery-filter-btn" data-filter="sweeping" id="btn-filter-sweeping">Flue Sweeping</button>
+                        <button class="gallery-filter-btn" data-filter="restoration" id="btn-filter-restoration">Fireplace Restoration</button>
+                        <button class="gallery-filter-btn" data-filter="repair" id="btn-filter-repair">Masonry Repair</button>
+                    </div>
+                </div>
+
+                <!-- Portfolio Grid -->
+                <div class="row g-4 justify-content-center">
+                    
+                    <!-- Grid Item 1 -->
+                    <div class="col-lg-4 col-md-6 scroll-reveal">
+                        <div class="gallery-grid-item" data-category="sweeping">
+                            <img src="assets/images/gallery_sweeping_1.png" class="gallery-grid-img" alt="Soot and creosote build-up inside a fireplace before sweeping.">
+                            <div class="gallery-overlay">
+                                <span class="badge bg-secondary mb-2 rounded-0">Sweeping</span>
+                                <h3 class="h5 fw-bold text-white mb-2">Flue Creosote Hazard</h3>
+                                <p class="small text-secondary mb-0">Heavy carbon glaze buildup before professional mechanical sweep.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Grid Item 2 -->
+                    <div class="col-lg-4 col-md-6 scroll-reveal">
+                        <div class="gallery-grid-item" data-category="sweeping">
+                            <img src="assets/images/gallery_sweeping_2.png" class="gallery-grid-img" alt="A perfectly swept brick fireplace flue showing clean bricks and mortar.">
+                            <div class="gallery-overlay">
+                                <span class="badge bg-secondary mb-2 rounded-0">Sweeping</span>
+                                <h3 class="h5 fw-bold text-white mb-2">Pristine Hearth Sweeping</h3>
+                                <p class="small text-secondary mb-0">Completely soot-free chimney flue and firebox brickwork after service.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Grid Item 3 -->
+                    <div class="col-lg-4 col-md-6 scroll-reveal">
+                        <div class="gallery-grid-item" data-category="restoration">
+                            <img src="assets/images/hero_fireplace.png" class="gallery-grid-img" alt="Stunning custom stone fireplace hearth inside a modern luxury living room.">
+                            <div class="gallery-overlay">
+                                <span class="badge bg-secondary mb-2 rounded-0">Restoration</span>
+                                <h3 class="h5 fw-bold text-white mb-2">Luxury Hearth Design</h3>
+                                <p class="small text-secondary mb-0">Clean modern slate stone hearth installation and draft balance.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Grid Item 4 -->
+                    <div class="col-lg-4 col-md-6 scroll-reveal">
+                        <div class="gallery-grid-item" data-category="repair">
+                            <img src="assets/images/fireplace_repair.png" class="gallery-grid-img" alt="Professional masonry repair showing fresh mortar pointing on fireplace brickwork.">
+                            <div class="gallery-overlay">
+                                <span class="badge bg-secondary mb-2 rounded-0">Repair</span>
+                                <h3 class="h5 fw-bold text-white mb-2">Masonry Tuckpointing</h3>
+                                <p class="small text-secondary mb-0">Restored crumbling firebox mortar joints to seal combustion gases.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Grid Item 5 -->
+                    <div class="col-lg-4 col-md-6 scroll-reveal">
+                        <div class="gallery-grid-item" data-category="restoration">
+                            <img src="assets/images/fireplace_installation.png" class="gallery-grid-img" alt="Stunning modern custom gas fireplace installed in a rich wood panel wall.">
+                            <div class="gallery-overlay">
+                                <span class="badge bg-secondary mb-2 rounded-0">Restoration</span>
+                                <h3 class="h5 fw-bold text-white mb-2">Modern Gas Fireplace Install</h3>
+                                <p class="small text-secondary mb-0">Custom balanced-vent fireplace insert in luxury wood-paneled wall.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Grid Item 6 -->
+                    <div class="col-lg-4 col-md-6 scroll-reveal">
+                        <div class="gallery-grid-item" data-category="restoration">
+                            <img src="assets/images/gallery_restoration_1.png" class="gallery-grid-img" alt="A beautifully restored antique Victorian cast iron fireplace insert with white marble mantel.">
+                            <div class="gallery-overlay">
+                                <span class="badge bg-secondary mb-2 rounded-0">Restoration</span>
+                                <h3 class="h5 fw-bold text-white mb-2">Antique Victorian Restoration</h3>
+                                <p class="small text-secondary mb-0">Ornate cast iron insert restoration paired with premium marble surrounds.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Grid Item 7 -->
+                    <div class="col-lg-4 col-md-6 scroll-reveal">
+                        <div class="gallery-grid-item" data-category="repair">
+                            <img src="assets/images/gallery_repair_1.png" class="gallery-grid-img" alt="Mason rebuilding chimney crown brickwork.">
+                            <div class="gallery-overlay">
+                                <span class="badge bg-secondary mb-2 rounded-0">Repair</span>
+                                <h3 class="h5 fw-bold text-white mb-2">Chimney Crown Rebuild</h3>
+                                <p class="small text-secondary mb-0">Precision rooftop mortar pointing and crown waterproofing.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Booking Callout -->
+        <section class="py-5 bg-card border-top" aria-label="Book inspection section">
+            <div class="container py-4 text-center">
+                <h2 class="h3 fw-bold mb-3">Require Clean Fireplace Performance?</h2>
+                <p class="col-md-7 mx-auto mb-4 text-secondary">Let me analyze your hearth. I provide certified inspections and sweepings backed by a 100% dust-free guarantee.</p>
+                <a href="contact.html" class="btn btn-premium" id="gallery-cta-booking">Schedule Service Visit</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-card border-top" aria-label="Site footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <a class="d-flex align-items-center mb-3" href="index.html" id="footer-logo-link">
+                        <img src="assets/images/logo.svg" alt="FlameCraft Logo" class="footer-logo">
+                    </a>
+                    <p class="small mb-4">Artisan chimney sweeping, flue scans, and safety masonry repair. FlameCraft delivers premium, code-compliant maintenance to protect luxury homes from soot and venting hazards.</p>
+                    <div class="d-flex gap-2 mb-4 footer-socials">
+                        <a href="https://www.facebook.com/luxechimney" class="control-btn" aria-label="Facebook" target="_blank" rel="noopener"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/luxechimney" class="control-btn" aria-label="Instagram" target="_blank" rel="noopener"><i class="bi bi-instagram"></i></a>
+                        <a href="https://twitter.com/luxechimney" class="control-btn" aria-label="Twitter" target="_blank" rel="noopener"><i class="bi bi-twitter-x"></i></a>
+                        <a href="https://linkedin.com/company/luxechimney" class="control-btn" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <h4 class="h6 fw-bold text-uppercase letter-spacing-1 mb-3">Quick Links</h4>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><a href="index.html" class="text-secondary hover-primary">Home</a></li>
+                        <li class="mb-2"><a href="home2.html" class="text-secondary hover-primary">Home 2</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-secondary hover-primary">Services</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-secondary hover-primary">About Us</a></li>
+                        <li class="mb-2"><a href="gallery.html" class="text-secondary hover-primary">Gallery Portfolio</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <h4 class="h6 fw-bold text-uppercase letter-spacing-1 mb-3">Resources</h4>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><a href="pricing.html" class="text-secondary hover-primary">Pricing Tiers</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-secondary hover-primary">Schedule Booking</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-secondary hover-primary">Safety Protocols</a></li>
+                        <li class="mb-2"><a href="404.html" class="text-secondary hover-primary">Terms of Service</a></li>
+                        <li class="mb-2"><a href="404.html" class="text-secondary hover-primary">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="h6 fw-bold text-uppercase letter-spacing-1 mb-3">Stay Updated</h4>
+                    <p class="small text-secondary mb-3">Subscribe to receive seasonal safety guides and priority booking slots.</p>
+                    <form class="needs-validation-custom footer-newsletter-form" id="newsletter-form" novalidate>
+                        <div class="input-group">
+                            <input type="email" class="form-control premium-form-control text-start" placeholder="Your Email Address" aria-label="Your Email Address" required>
+                            <button class="btn btn-premium px-3" type="submit" id="newsletter-subscribe-btn">Subscribe</button>
+                        </div>
+                        <div class="invalid-feedback-custom text-danger small mt-1" style="display: none;">Please enter a valid email address.</div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="row pt-5 mt-4 border-top align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small text-secondary mb-0">&copy; <span id="current-year">2026</span> FlameCraft. All rights reserved. Crafted for safety and warmth.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
+                    <a href="404.html" class="small text-secondary me-3 hover-primary">Privacy Policy</a>
+                    <a href="404.html" class="small text-secondary hover-primary">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top-btn" aria-label="Back to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 Bundle JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom Main JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
