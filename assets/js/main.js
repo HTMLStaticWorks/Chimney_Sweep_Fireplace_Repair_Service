@@ -46,10 +46,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const savedDir = localStorage.getItem('dir');
     if (savedDir === 'rtl') {
         htmlElement.setAttribute('dir', 'rtl');
-        updateRtlButtonText(true);
+        updateRtlIcon(true);
     } else {
         htmlElement.setAttribute('dir', 'ltr');
-        updateRtlButtonText(false);
+        updateRtlIcon(false);
     }
     
     if (rtlToggle) {
@@ -60,17 +60,28 @@ document.addEventListener('DOMContentLoaded', () => {
             
             htmlElement.setAttribute('dir', newDir);
             localStorage.setItem('dir', newDir);
-            updateRtlButtonText(!isRtl);
+            updateRtlIcon(!isRtl);
             
             // Reload slider or map layout adjustments if needed
             window.dispatchEvent(new Event('resize'));
         });
     }
     
-    function updateRtlButtonText(isRtl) {
+    function updateRtlIcon(isRtl) {
         if (!rtlToggle) return;
-        rtlToggle.textContent = isRtl ? 'LTR' : 'RTL';
-        rtlToggle.setAttribute('aria-label', isRtl ? 'Switch to Left to Right Layout' : 'Switch to Right to Left Layout');
+        let icon = rtlToggle.querySelector('i');
+        if (!icon) {
+            // Create icon if it doesn't exist
+            icon = document.createElement('i');
+            rtlToggle.textContent = '';
+            rtlToggle.appendChild(icon);
+        }
+        icon.className = 'bi bi-arrow-left-right';
+        if (isRtl) {
+            rtlToggle.setAttribute('aria-label', 'Switch to Left to Right Layout');
+        } else {
+            rtlToggle.setAttribute('aria-label', 'Switch to Right to Left Layout');
+        }
     }
 
     // ----------------------------------------------------
