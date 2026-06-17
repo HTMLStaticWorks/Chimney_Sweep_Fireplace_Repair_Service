@@ -781,6 +781,11 @@ body.dark-mode .pricing-features li.text-muted i {
         margin-bottom: 1.5rem !important;
     }
 
+    .premium-nav .navbar-collapse .ms-lg-auto {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
     .premium-nav {
         padding-top: 1rem !important;
         padding-bottom: 1rem !important;
